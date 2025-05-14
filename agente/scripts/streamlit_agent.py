@@ -161,7 +161,6 @@ def executar_query(query):
         return [], []
 
 # Salvar histórico
-# Salvar histórico
 def salvar_historico(pergunta, query, resultado):
     try:
         conn = mysql.connector.connect(

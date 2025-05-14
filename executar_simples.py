@@ -54,7 +54,7 @@ def main():
     verificar_prompt_json()
     
     # Executa o Streamlit
-    arquivo_streamlit = "Python/Projetos/aula_dio_agentes_sq/agente/scripts/streamlit_agent.py"
+    arquivo_streamlit = "agente/scripts/streamlit_agent.py"
     if os.path.exists(arquivo_streamlit):
         print(f"Executando {arquivo_streamlit}...")
         try:
