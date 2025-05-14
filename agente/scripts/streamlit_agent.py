@@ -49,8 +49,8 @@ with col4:
 # Campo de pergunta
 st.markdown("### ✍️ Pergunta personalizada")
 pergunta = st.text_input("Digite sua pergunta em linguagem natural:", 
-                         value=st.session_state.pergunta, 
-                         key="input_pergunta")
+                        value=st.session_state.pergunta, 
+                        key="input_pergunta")
 
 # --- FUNÇÕES AUXILIARES ---
 
@@ -120,7 +120,7 @@ Gere uma consulta SQL correspondente:
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-4.1-nano", # gpt-4o | gpt-4.1-mini | gpt-4.1-nano | gpt-4o-mini
             messages=[
                 {"role": "system", "content": prompt.get('model_role', "Você é um assistente de SQL.")},
                 {"role": "user", "content": contexto}
